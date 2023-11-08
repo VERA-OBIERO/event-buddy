@@ -1,9 +1,13 @@
 import React from 'react'
 import Header from './components/Header'
+import EventList from './components/EventList'
 
 function App() {
   return (
-    <Header />
+    <div>
+      <Header />
+      <EventList />
+    </div>
   )
 }
 
