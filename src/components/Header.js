@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
   return (
-    <div>Welcome to Event Buddy!</div>
+    <div className='Header'>Welcome to Event Buddy!</div>
   )
 }
 
