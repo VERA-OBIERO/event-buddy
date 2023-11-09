@@ -229,6 +229,16 @@
       "location": "nai",
       "description": "amen",
       "id": 23
+    },
+    {
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdQ5C_btivLKHRDmY7NFq5hkgnuzirIcnokw&usqp=CAU",
+      "title": "hiii",
+      "date": "10-11-2023",
+      "time": "6pm",
+      "category": "Dance",
+      "location": "Muze again",
+      "description": "yesssss",
+      "id": 24
     }
   ]
 }

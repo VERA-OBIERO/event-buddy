@@ -3,11 +3,15 @@ import { ChakraProvider } from '@chakra-ui/react'
 import Header from './components/Header'
 import EventList from './components/EventList'
 import AddEventForm from './components/AddEventForm'
+import Search from './components/Search'
 
 function App() {
 
   //state to store the list of events
   const [events, setEvents] = useState([]);
+
+   // State to store filtered events
+   const [filteredEvents, setFilteredEvents] = useState([]);
 
   //function to handle new event
   const handleAddEvent = (newEvent) => {
@@ -15,6 +19,20 @@ function App() {
     setEvents((prevEvents) => [...prevEvents, newEvent]);
   };
 
+    // Function to handle search
+    const handleSearch = (searchTerm) => {
+      // Filter events based on the search term
+      const filtered = events.filter(
+        (event) =>
+          event.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          event.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          event.category.toLowerCase().includes(searchTerm.toLowerCase())
+        // Add more fields as needed for your search
+      );
+  
+      setFilteredEvents(filtered);
+    };
+  
   //fetch events from the server when the component mounts
   useEffect(() => {
     fetch('http://localhost:3000/events')// use Fetch API to get events from the server
@@ -31,8 +49,9 @@ function App() {
   return (
     <ChakraProvider>
       <Header />
+      <Search onSearch={handleSearch} />
       <AddEventForm onAddEvent={handleAddEvent} />
-      <EventList events={events}/>
+      <EventList events={filteredEvents.length > 0 ? filteredEvents : events}/>
     </ChakraProvider>
   )
 }
