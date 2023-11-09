@@ -4,6 +4,7 @@ import Header from './components/Header'
 import EventList from './components/EventList'
 import AddEventForm from './components/AddEventForm'
 import Search from './components/Search'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -52,6 +53,7 @@ function App() {
       <Search onSearch={handleSearch} />
       <AddEventForm onAddEvent={handleAddEvent} />
       <EventList events={filteredEvents.length > 0 ? filteredEvents : events}/>
+      <Footer />
     </ChakraProvider>
   )
 }
