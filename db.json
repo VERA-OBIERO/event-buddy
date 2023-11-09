@@ -2,26 +2,134 @@
     "events": [
         {
           "id": 1,
-          "title": "Event 1",
+          "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoZFTC-dchflojRyj1hR0C0Zlkzu7zpiECZg&usqp=CAU",
+          "title": "The Mulberry roject presents Lemon and Herb",
           "date": "2023-11-10",
-          "location": "Location 1",
-          "description": "Description for Event 1"
+          "time": "6.00PM yill dawn",
+          "category": "Oontz",
+          "location": "The Alchemist",
+          "description": "Come catch a vibe"
         },
         {
           "id": 2,
-          "title": "Event 2",
-          "date": "2023-11-15",
-          "location": "Location 2",
-          "description": "Description for Event 2"
+          "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoZFTC-dchflojRyj1hR0C0Zlkzu7zpiECZg&usqp=CAU",
+          "title": "The Mulberry roject presents Lemon and Herb",
+          "date": "2023-11-10",
+          "time": "6.00PM yill dawn",
+          "category": "Oontz",
+          "location": "The Alchemist",
+          "description": "Come catch a vibe"
         },
         {
-            "id": 3,
-            "title": "Event 1",
-            "date": "2023-11-20",
-            "location": "Location 3",
-            "description": "Description for Event 3"
-          }
-      ]
-      
+          "id": 3,
+          "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoZFTC-dchflojRyj1hR0C0Zlkzu7zpiECZg&usqp=CAU",
+          "title": "The Mulberry roject presents Lemon and Herb",
+          "date": "2023-11-10",
+          "time": "6.00PM yill dawn",
+          "category": "Oontz",
+          "location": "The Alchemist",
+          "description": "Come catch a vibe"
+        },
+        {
+          "id": 4,
+          "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoZFTC-dchflojRyj1hR0C0Zlkzu7zpiECZg&usqp=CAU",
+          "title": "The Mulberry roject presents Lemon and Herb",
+          "date": "2023-11-10",
+          "time": "6.00PM yill dawn",
+          "category": "Oontz",
+          "location": "The Alchemist",
+          "description": "Come catch a vibe"
+        },
+        {
+          "id": 5,
+          "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoZFTC-dchflojRyj1hR0C0Zlkzu7zpiECZg&usqp=CAU",
+          "title": "The Mulberry roject presents Lemon and Herb",
+          "date": "2023-11-10",
+          "time": "6.00PM yill dawn",
+          "category": "Oontz",
+          "location": "The Alchemist",
+          "description": "Come catch a vibe"
+        },
+        {
+          "id": 6,
+          "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoZFTC-dchflojRyj1hR0C0Zlkzu7zpiECZg&usqp=CAU",
+          "title": "The Mulberry roject presents Lemon and Herb",
+          "date": "2023-11-10",
+          "time": "6.00PM yill dawn",
+          "category": "Oontz",
+          "location": "The Alchemist",
+          "description": "Come catch a vibe"
+        },
+        {
+          "id": 7,
+          "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoZFTC-dchflojRyj1hR0C0Zlkzu7zpiECZg&usqp=CAU",
+          "title": "The Mulberry roject presents Lemon and Herb",
+          "date": "2023-11-10",
+          "time": "6.00PM yill dawn",
+          "category": "Oontz",
+          "location": "The Alchemist",
+          "description": "Come catch a vibe"
+        },
+        {
+          "id": 8,
+          "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoZFTC-dchflojRyj1hR0C0Zlkzu7zpiECZg&usqp=CAU",
+          "title": "The Mulberry roject presents Lemon and Herb",
+          "date": "2023-11-10",
+          "time": "6.00PM yill dawn",
+          "category": "Oontz",
+          "location": "The Alchemist",
+          "description": "Come catch a vibe"
+        },
+        {
+          "id": 9,
+          "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoZFTC-dchflojRyj1hR0C0Zlkzu7zpiECZg&usqp=CAU",
+          "title": "The Mulberry roject presents Lemon and Herb",
+          "date": "2023-11-10",
+          "time": "6.00PM yill dawn",
+          "category": "Oontz",
+          "location": "The Alchemist",
+          "description": "Come catch a vibe"
+        },
+        {
+          "id": 10,
+          "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoZFTC-dchflojRyj1hR0C0Zlkzu7zpiECZg&usqp=CAU",
+          "title": "The Mulberry roject presents Lemon and Herb",
+          "date": "2023-11-10",
+          "time": "6.00PM yill dawn",
+          "category": "Oontz",
+          "location": "The Alchemist",
+          "description": "Come catch a vibe"
+        },
+        {
+          "id": 11,
+          "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoZFTC-dchflojRyj1hR0C0Zlkzu7zpiECZg&usqp=CAU",
+          "title": "The Mulberry roject presents Lemon and Herb",
+          "date": "2023-11-10",
+          "time": "6.00PM yill dawn",
+          "category": "Oontz",
+          "location": "The Alchemist",
+          "description": "Come catch a vibe"
+        },
+        {
+          "id": 12,
+          "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoZFTC-dchflojRyj1hR0C0Zlkzu7zpiECZg&usqp=CAU",
+          "title": "The Mulberry roject presents Lemon and Herb",
+          "date": "2023-11-10",
+          "time": "6.00PM yill dawn",
+          "category": "Oontz",
+          "location": "The Alchemist",
+          "description": "Come catch a vibe"
+        },
+        {
+          "id": 13,
+          "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoZFTC-dchflojRyj1hR0C0Zlkzu7zpiECZg&usqp=CAU",
+          "title": "The Mulberry roject presents Lemon and Herb",
+          "date": "2023-11-10",
+          "time": "6.00PM yill dawn",
+          "category": "Oontz",
+          "location": "The Alchemist",
+          "description": "Come catch a vibe"
+        }
+      ]      
 }
   

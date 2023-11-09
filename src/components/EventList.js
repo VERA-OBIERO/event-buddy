@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { SimpleGrid, Box, Image, Heading, Text, ButtonGroup, Button } from '@chakra-ui/react'
 
 const EventList = () => {
   // Define state variables for events and loading status
@@ -30,21 +31,38 @@ const EventList = () => {
   if (loading) {
     return <div>Loading...</div>; // Display a loading message while data is being fetched
   }
-
+  // return data in form of Cards styled using Chakra UI
   return (
     <div>
-      <h2>Event List</h2>
-      <ul>
-        {events.map((event) => (
-          <li key={event.id}>
-            <h3>{event.title}</h3>
-            <p>Date: {event.date}</p>
-            <p>Location: {event.location}</p>
-            <p>Description: {event.description}</p>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <h2>Event List</h2>
+    <SimpleGrid columns={3} spacing={4}>
+      {events.map((event) => (
+        <Box key={event.id} maxW="sm">
+          <Image
+            src={event.poster}
+            alt={event.title}
+            borderRadius="lg"
+          />
+          <Box p="4">
+            <Heading size="md">{event.title}</Heading>
+            <Text>{event.description}</Text>
+            <Text>Date: {event.date}</Text>
+            <Text>Time: {event.time}</Text>
+            <Text>Category: {event.category}</Text>
+            <Text>Location: {event.location}</Text>
+            <ButtonGroup spacing="2" mt="4">
+              <Button variant="solid" colorScheme="blue">
+                Buy now
+              </Button>
+              <Button variant="ghost" colorScheme="blue">
+                Add to cart
+              </Button>
+            </ButtonGroup>
+          </Box>
+        </Box>
+      ))}
+    </SimpleGrid>
+  </div>
   );
 };
 
