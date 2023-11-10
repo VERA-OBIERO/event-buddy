@@ -181,16 +181,6 @@
       "id": 20
     },
     {
-      "poster": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUWFRgWFhYYGBgaGhgZGBocHB4aHxwYGhoaGRocGBocIS4lHB4rIRkZJjgnKy8xNTU1HCQ7QDs0Py40NTEBDAwMEA8QHxISHzQrJSs0NjQ0NDY0NDQ0NDQ0NDQ2NjQ0ND00NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQIDBAUGBwj/xAA9EAACAQMDAgQFAQYFBAEFAAABAhEAAyEEEjEFQSJRYXEGE4GRoTJCUrHB0fAUI2KC4RVykvEHFiRTssL/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAKREAAgICAgIBAwUAAwAAAAAAAAECEQMhEjEEQVETcZEUIiNhoQWxwf/aAAwDAQACEQMRAD8A8ip002lqhWOFKKZNOFItSHRUx0jRjMZIHIHMlTn8VADUqXoEQPtP/H4pOw2RUVYvKhEhzMCQVxu7hSDxHmBUFJMLEpWFFBpg+xtJS05RQJjRQKeFo2+tMm0NFLNO2+tEUFWhs0U6KUrQFoaKUUoWgCgoSil+lEUC0JRSlaCtAUhIopyrNS7IFFi0iJEPepCsCnquBRcGKVkt2NRcU6KVVwKIoJb2RuKjbmn3CMZ+1RznFMuKHxTSaaTRSsaj8i7qSkoosriiEVIgBOTt9Yn7xmPaabFAFMniS3bO1gAyPIBBUyMzg7gCGxwRPFP1OkuW4+YjpPG5WWfbcBNQD0xHlU6626FZRccKwhl3GGGTDDg8nnzo2KiJFJMDmhvKn2rsRgYJk5kgxg5jEGMdzM4i91bq7X7nzDbt2yECbUXapXaUlgSZaDG7nA7ignd6M0iljFPusCZAABztEwPQbiT+TTaRdiURTlWptHpLlx9tpGd4ZtqiSVUSxj0FIGVaUGlP8aSKYDgc0tNpaohxsWaJp",
-      "title": "erftg",
-      "date": "gb",
-      "time": "er",
-      "category": "rftgh",
-      "location": "rtg",
-      "description": "vera",
-      "id": 21
-    },
-    {
       "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjy-5hizhVQIAT9eF-VkAGXfpkzDyeQDlaSg&usqp=CAU",
       "title": "TESTING",
       "date": "10-11-2023",
@@ -199,16 +189,6 @@
       "location": "Muzee",
       "description": "yaaay",
       "id": 22
-    },
-    {
-      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKtepbQ8zpPIWRV60b9oc95v8U_3Ker52ltw&usqp=CAU",
-      "title": "hi again",
-      "date": "1-1-11",
-      "time": "3am",
-      "category": "vibes",
-      "location": "nai",
-      "description": "amen",
-      "id": 23
     }
   ]
 }

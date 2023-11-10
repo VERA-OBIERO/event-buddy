@@ -1,7 +1,13 @@
 import React from 'react';
+import { useState } from 'react';
 import { SimpleGrid, Box, Image, Heading, Text, ButtonGroup, Button } from '@chakra-ui/react'
+import RSVPModal from './RSVPModal';
 
   const EventList = ({ events, onDeleteEvent }) => {
+    const [isRSVPModalOpen, setRSVPModalOpen] = useState(false);
+
+    const openRSVPModal = () => setRSVPModalOpen(true);
+    const closeRSVPModal = () => setRSVPModalOpen(false);
   
     //check if there are no events or the events array is empty
     if (!events || events.length === 0) {
@@ -28,8 +34,8 @@ import { SimpleGrid, Box, Image, Heading, Text, ButtonGroup, Button } from '@cha
             <Text>Category: {event.category}</Text>
             <Text>Location: {event.location}</Text>
             <ButtonGroup spacing="2" mt="4">
-              <Button variant="solid" colorScheme="blue">
-                Buy now
+              <Button variant="solid" colorScheme="blue" onClick={openRSVPModal}>
+                RSVP
               </Button>
               <Button variant="ghost" colorScheme="red" onClick={() => onDeleteEvent(event.id)}>
                 Delete
@@ -39,6 +45,7 @@ import { SimpleGrid, Box, Image, Heading, Text, ButtonGroup, Button } from '@cha
         </Box>
       ))}
     </SimpleGrid>
+    <RSVPModal isOpen={isRSVPModalOpen} onClose={closeRSVPModal} />
   </div>
   );
 };
