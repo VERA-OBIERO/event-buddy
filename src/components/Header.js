@@ -1,9 +1,27 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Flex, Heading, Spacer, Box, Link as ChakraLink } from '@chakra-ui/react';
 
-function Header() {
+const Header = () => {
   return (
-    <div className='Header'>Welcome to Event Buddy!</div>
-  )
-}
+    <Box bg="teal" p="4">
+      <Flex>
+        <Box>
+          <Heading size="md" color="white">
+            Event Manager
+          </Heading>
+        </Box>
+        <Spacer />
+        <Box>
+          {/* Use Link component to navigate to the Add Event page */}
+          <ChakraLink as={Link} to="/add-event" color="white" marginRight="4">
+            Add Event
+          </ChakraLink>
+        </Box>
+      </Flex>
+    </Box>
+  );
+};
 
-export default Header
+export default Header;
+

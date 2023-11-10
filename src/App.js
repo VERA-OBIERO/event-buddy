@@ -1,15 +1,15 @@
-import React, {useState, useEffect} from 'react'
-import { ChakraProvider } from '@chakra-ui/react'
-import Header from './components/Header'
-import EventList from './components/EventList'
-import AddEventForm from './components/AddEventForm'
-import Search from './components/Search'
-import EditEventForm from './components/EditEventForm'
-import Footer from './components/Footer'
+import React, { useState, useEffect } from 'react';
+import { ChakraProvider } from '@chakra-ui/react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import EventList from './components/EventList';
+import AddEventForm from './components/AddEventForm';
+import Search from './components/Search';
+import EditEventForm from './components/EditEventForm';
+import Footer from './components/Footer';
 
 function App() {
-
-  //state to store the list of events
+  // state to store the list of events
   const [events, setEvents] = useState([]);
 
   // State to store filtered events
@@ -17,45 +17,45 @@ function App() {
 
   const [selectedEvent, setSelectedEvent] = useState(null); // Track the currently edited event
 
-  //function to handle new event
+  // function to handle new event
   const handleAddEvent = (newEvent) => {
-    //update the events state with the new event
+    // update the events state with the new event
     setEvents((prevEvents) => [...prevEvents, newEvent]);
   };
 
-    // Function to handle search
-    const handleSearch = (searchTerm) => {
-      // Filter events based on the search term
-      const filtered = events.filter(
-        (event) =>
-          event.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          event.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          event.category.toLowerCase().includes(searchTerm.toLowerCase())
-        // Add more fields as needed for your search
-      );
-  
-      setFilteredEvents(filtered);
-    };
+  // Function to handle search
+  const handleSearch = (searchTerm) => {
+    // Filter events based on the search term
+    const filtered = events.filter(
+      (event) =>
+        event.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        event.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        event.category.toLowerCase().includes(searchTerm.toLowerCase())
+      // Add more fields as needed for your search
+    );
 
-    const handleDeleteEvent = (eventId) => {
-      // Perform deletion on the server and update the events state
-      fetch(`http://localhost:3000/events/${eventId}`, {
-        method: 'DELETE',
+    setFilteredEvents(filtered);
+  };
+
+  const handleDeleteEvent = (eventId) => {
+    // Perform deletion on the server and update the events state
+    fetch(`http://localhost:3000/events/${eventId}`, {
+      method: 'DELETE',
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
       })
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
-          }
-          return response.json();
-        })
-        .then(() => {
-          // Update the events state by removing the deleted event
-          setEvents((prevEvents) => prevEvents.filter((event) => event.id !== eventId));
-        })
-        .catch((error) => console.error('Error deleting event:', error));
-    };
+      .then(() => {
+        // Update the events state by removing the deleted event
+        setEvents((prevEvents) => prevEvents.filter((event) => event.id !== eventId));
+      })
+      .catch((error) => console.error('Error deleting event:', error));
+  };
 
-      // Handle editing events
+  // Handle editing events
   const handleEditEvent = (editedEvent) => {
     // Update the events state with the edited event
     setEvents((prevEvents) =>
@@ -64,37 +64,45 @@ function App() {
     // Reset the selectedEvent after editing
     setSelectedEvent(null);
   };
-  
-  //fetch events from the server when the component mounts
+
+  // fetch events from the server when the component mounts
   useEffect(() => {
-    fetch('http://localhost:3000/events')// use Fetch API to get events from the server
+    fetch('http://localhost:3000/events') // use Fetch API to get events from the server
       .then((response) => {
-        if (!response.ok) {// check if response is successful
+        if (!response.ok) {
+          // check if response is successful
           throw new Error('Network response was not ok');
         }
-        return response.json();// parse response as JSON
+        return response.json(); // parse response as JSON
       })
-      .then((data) => setEvents(data))//update the events state with the retrieved data
-      .catch((error) => console.error('Error fetching data:', error));// log any errors that occur during fetch
-  }, []);//effect runs only once when component mounts
+      .then((data) => setEvents(data)) // update the events state with the retrieved data
+      .catch((error) => console.error('Error fetching data:', error)); // log any errors that occur during fetch
+  }, []); // effect runs only once when component mounts
 
   return (
     <ChakraProvider>
-      <Header />
-      <Search onSearch={handleSearch} />
-      <AddEventForm onAddEvent={handleAddEvent} />
-      {selectedEvent && (
-        <EditEventForm
-          event={selectedEvent}
-          onEditEvent={handleEditEvent}
-          onClose={() => setSelectedEvent(null)}
-          setEvents={setEvents}
-        />
-      )}
-      <EventList events={filteredEvents.length > 0 ? filteredEvents : events} onDeleteEvent={handleDeleteEvent}/>
-      <Footer />
+      <Router>
+        <Header />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <React.Fragment>
+                <Search onSearch={handleSearch} />
+                <EventList events={filteredEvents.length > 0 ? filteredEvents : events} onDeleteEvent={handleDeleteEvent} />
+              </React.Fragment>
+            }
+          />
+          <Route path="/add-event" element={<AddEventForm onAddEvent={handleAddEvent} />} />
+        </Routes>
+        {selectedEvent && (
+          <EditEventForm event={selectedEvent} onEditEvent={handleEditEvent} onClose={() => setSelectedEvent(null)} setEvents={setEvents} />
+        )}
+        <Footer />
+      </Router>
     </ChakraProvider>
-  )
+  );
 }
 
-export default App
+export default App;
+
