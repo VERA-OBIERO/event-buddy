@@ -8,7 +8,7 @@ const Header = () => {
       <Flex>
         <Box>
           <Heading size="md" color="white">
-            Event Manager
+            Welcome to Event Buddy!
           </Heading>
         </Box>
         <Spacer />
@@ -19,6 +19,9 @@ const Header = () => {
           <ChakraLink as={Link} to="/add-event" color="white" marginRight="4">
             Add Event
           </ChakraLink>
+          <a href="#footer" style={{ color: 'white', marginRight: '4', textDecoration: 'none' }}>
+            Contact Us
+          </a>
         </Box>
       </Flex>
     </Box>
