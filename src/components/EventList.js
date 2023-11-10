@@ -2,12 +2,39 @@ import React from 'react';
 import { useState } from 'react';
 import { SimpleGrid, Box, Image, Heading, Text, ButtonGroup, Button } from '@chakra-ui/react'
 import RSVPModal from './RSVPModal';
+import EditEventForm from './EditEventForm';
 
-  const EventList = ({ events, onDeleteEvent }) => {
+  
+const EventList = ({ events, setEvents, onDeleteEvent }) => {
     const [isRSVPModalOpen, setRSVPModalOpen] = useState(false);
 
     const openRSVPModal = () => setRSVPModalOpen(true);
     const closeRSVPModal = () => setRSVPModalOpen(false);
+
+
+    const [isEditFormOpen, setEditFormOpen] = useState(false);
+    const [selectedEvent, setSelectedEvent] = useState(null);
+
+    const handleEditEvent = (editedEvent) => {
+      console.log('handleEditEvent called with:', editedEvent);
+      // Update the events state with the edited event
+      setEvents((prevEvents) =>
+        prevEvents.map((event) => (event.id === editedEvent.id ? editedEvent : event))
+      );
+      // Reset the selectedEvent after editing
+      setSelectedEvent(null);
+    };
+    
+  
+    const openEditForm = (event) => {
+      setEditFormOpen(true);
+      setSelectedEvent(event);
+    };
+  
+    const closeEditForm = () => {
+      setEditFormOpen(false);
+      setSelectedEvent(null);
+    };
   
     //check if there are no events or the events array is empty
     if (!events || events.length === 0) {
@@ -37,6 +64,9 @@ import RSVPModal from './RSVPModal';
               <Button variant="solid" colorScheme="blue" onClick={openRSVPModal}>
                 RSVP
               </Button>
+              <Button variant="solid" colorScheme="blue" onClick={() => openEditForm(event)}>
+                  Edit
+              </Button>
               <Button variant="ghost" colorScheme="red" onClick={() => onDeleteEvent(event.id)}>
                 Delete
               </Button>
@@ -46,6 +76,9 @@ import RSVPModal from './RSVPModal';
       ))}
     </SimpleGrid>
     <RSVPModal isOpen={isRSVPModalOpen} onClose={closeRSVPModal} />
+    {isEditFormOpen && selectedEvent && (
+    <EditEventForm event={selectedEvent} onEditEvent={handleEditEvent} onClose={closeEditForm} setEvents={setEvents} />
+      )}
   </div>
   );
 };

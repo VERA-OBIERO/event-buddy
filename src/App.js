@@ -4,6 +4,7 @@ import Header from './components/Header'
 import EventList from './components/EventList'
 import AddEventForm from './components/AddEventForm'
 import Search from './components/Search'
+import EditEventForm from './components/EditEventForm'
 import Footer from './components/Footer'
 
 function App() {
@@ -13,6 +14,8 @@ function App() {
 
   // State to store filtered events
   const [filteredEvents, setFilteredEvents] = useState([]);
+
+  const [selectedEvent, setSelectedEvent] = useState(null); // Track the currently edited event
 
   //function to handle new event
   const handleAddEvent = (newEvent) => {
@@ -51,6 +54,16 @@ function App() {
         })
         .catch((error) => console.error('Error deleting event:', error));
     };
+
+      // Handle editing events
+  const handleEditEvent = (editedEvent) => {
+    // Update the events state with the edited event
+    setEvents((prevEvents) =>
+      prevEvents.map((event) => (event.id === editedEvent.id ? editedEvent : event))
+    );
+    // Reset the selectedEvent after editing
+    setSelectedEvent(null);
+  };
   
   //fetch events from the server when the component mounts
   useEffect(() => {
@@ -70,6 +83,14 @@ function App() {
       <Header />
       <Search onSearch={handleSearch} />
       <AddEventForm onAddEvent={handleAddEvent} />
+      {selectedEvent && (
+        <EditEventForm
+          event={selectedEvent}
+          onEditEvent={handleEditEvent}
+          onClose={() => setSelectedEvent(null)}
+          setEvents={setEvents}
+        />
+      )}
       <EventList events={filteredEvents.length > 0 ? filteredEvents : events} onDeleteEvent={handleDeleteEvent}/>
       <Footer />
     </ChakraProvider>
