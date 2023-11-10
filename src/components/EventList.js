@@ -1,7 +1,7 @@
 import React from 'react';
 import { SimpleGrid, Box, Image, Heading, Text, ButtonGroup, Button } from '@chakra-ui/react'
 
-  const EventList = ({ events }) => {
+  const EventList = ({ events, onDeleteEvent }) => {
   
     //check if there are no events or the events array is empty
     if (!events || events.length === 0) {
@@ -31,8 +31,8 @@ import { SimpleGrid, Box, Image, Heading, Text, ButtonGroup, Button } from '@cha
               <Button variant="solid" colorScheme="blue">
                 Buy now
               </Button>
-              <Button variant="ghost" colorScheme="blue">
-                Add to cart
+              <Button variant="ghost" colorScheme="red" onClick={() => onDeleteEvent(event.id)}>
+                Delete
               </Button>
             </ButtonGroup>
           </Box>

@@ -11,8 +11,8 @@ function App() {
   //state to store the list of events
   const [events, setEvents] = useState([]);
 
-   // State to store filtered events
-   const [filteredEvents, setFilteredEvents] = useState([]);
+  // State to store filtered events
+  const [filteredEvents, setFilteredEvents] = useState([]);
 
   //function to handle new event
   const handleAddEvent = (newEvent) => {
@@ -33,6 +33,24 @@ function App() {
   
       setFilteredEvents(filtered);
     };
+
+    const handleDeleteEvent = (eventId) => {
+      // Perform deletion on the server and update the events state
+      fetch(`http://localhost:3000/events/${eventId}`, {
+        method: 'DELETE',
+      })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(() => {
+          // Update the events state by removing the deleted event
+          setEvents((prevEvents) => prevEvents.filter((event) => event.id !== eventId));
+        })
+        .catch((error) => console.error('Error deleting event:', error));
+    };
   
   //fetch events from the server when the component mounts
   useEffect(() => {
@@ -52,7 +70,7 @@ function App() {
       <Header />
       <Search onSearch={handleSearch} />
       <AddEventForm onAddEvent={handleAddEvent} />
-      <EventList events={filteredEvents.length > 0 ? filteredEvents : events}/>
+      <EventList events={filteredEvents.length > 0 ? filteredEvents : events} onDeleteEvent={handleDeleteEvent}/>
       <Footer />
     </ChakraProvider>
   )
