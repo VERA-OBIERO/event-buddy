@@ -4,10 +4,10 @@ import { Flex, Heading, Spacer, Box, Link as ChakraLink } from '@chakra-ui/react
 
 const Header = () => {
   return (
-    <Box bg="teal" p="4">
+    <Box bg="teal" p="4" color="white">
       <Flex>
         <Box>
-          <Heading size="md" color="white">
+          <Heading size="md" fontWeight="bold">
             Welcome to Event Buddy!
           </Heading>
         </Box>

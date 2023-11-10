@@ -57,7 +57,7 @@ const AddEventForm = ({ onAddEvent }) => {
   
 
   return (
-    <Box>
+    <Box p="4" maxW="600px" mx="auto" mt="4" bg="#877696">
       <h2>Add New Event</h2>
       <FormControl>
         <FormLabel>Poster URL</FormLabel>

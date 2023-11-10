@@ -11,16 +11,6 @@
       "description": "Come catch a vibe"
     },
     {
-      "id": 2,
-      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoZFTC-dchflojRyj1hR0C0Zlkzu7zpiECZg&usqp=CAU",
-      "title": "The Mulberry roject presents Lemon and Herb",
-      "date": "2023-11-10",
-      "time": "6.00PM yill dawn",
-      "category": "Oontz",
-      "location": "The Alchemist",
-      "description": "Come catch a vibe"
-    },
-    {
       "id": 3,
       "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoZFTC-dchflojRyj1hR0C0Zlkzu7zpiECZg&usqp=CAU",
       "title": "The Mulberry roject presents Lemon and Herb",
@@ -131,16 +121,6 @@
       "description": "Come catch a vibe"
     },
     {
-      "poster": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUWFRgWFhYYGBgaGhgZGBocHB4aHxwYGhoaGRocGBocIS4lHB4rIRkZJjgnKy8xNTU1HCQ7QDs0Py40NTEBDAwMEA8QHxISHzQrJSs0NjQ0NDY0NDQ0NDQ0NDQ2NjQ0ND00NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQIDBAUGBwj/xAA9EAACAQMDAgQFAQYFBAEFAAABAhEAAyEEEjEFQSJRYXEGE4GRoTJCUrHB0fAUI2KC4RVykvEHFiRTssL/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAKREAAgICAgIBAwUAAwAAAAAAAAECEQMhEjEEQVETcZEUIiNhoQWxwf/aAAwDAQACEQMRAD8A8ip002lqhWOFKKZNOFItSHRUx0jRjMZIHIHMlTn8VADUqXoEQPtP/H4pOw2RUVYvKhEhzMCQVxu7hSDxHmBUFJMLEpWFFBpg+xtJS05RQJjRQKeFo2+tMm0NFLNO2+tEUFWhs0U6KUrQFoaKUUoWgCgoSil+lEUC0JRSlaCtAUhIopyrNS7IFFi0iJEPepCsCnquBRcGKVkt2NRcU6KVVwKIoJb2RuKjbmn3CMZ+1RznFMuKHxTSaaTRSsaj8i7qSkoosriiEVIgBOTt9Yn7xmPaabFAFMniS3bO1gAyPIBBUyMzg7gCGxwRPFP1OkuW4+YjpPG5WWfbcBNQD0xHlU6626FZRccKwhl3GGGTDDg8nnzo2KiJFJMDmhvKn2rsRgYJk5kgxg5jEGMdzM4i91bq7X7nzDbt2yECbUXapXaUlgSZaDG7nA7ignd6M0iljFPusCZAABztEwPQbiT+TTaRdiURTlWptHpLlx9tpGd4ZtqiSVUSxj0FIGVaUGlP8aSKYDgc0tNpaohxsWaJp",
-      "title": "ytgeyj",
-      "date": "10-11-2023",
-      "time": "6pm",
-      "category": "Entertainment",
-      "location": "Muze",
-      "description": "etyjk6ku874ew",
-      "id": 14
-    },
-    {
       "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGdbIQUpPIK-v_Zo-APNILVBaZ12nnChEiLg&usqp=CAU",
       "title": "bwg4hb5",
       "date": "10-11-2023",
@@ -149,16 +129,6 @@
       "location": "Melanin",
       "description": "uqu5446iwk7",
       "id": 15
-    },
-    {
-      "poster": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUWFRgWFhYYGBgaGhgZGBocHB4aHxwYGhoaGRocGBocIS4lHB4rIRkZJjgnKy8xNTU1HCQ7QDs0Py40NTEBDAwMEA8QHxISHzQrJSs0NjQ0NDY0NDQ0NDQ0NDQ2NjQ0ND00NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQIDBAUGBwj/xAA9EAACAQMDAgQFAQYFBAEFAAABAhEAAyEEEjEFQSJRYXEGE4GRoTJCUrHB0fAUI2KC4RVykvEHFiRTssL/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAKREAAgICAgIBAwUAAwAAAAAAAAECEQMhEjEEQVETcZEUIiNhoQWxwf/aAAwDAQACEQMRAD8A8ip002lqhWOFKKZNOFItSHRUx0jRjMZIHIHMlTn8VADUqXoEQPtP/H4pOw2RUVYvKhEhzMCQVxu7hSDxHmBUFJMLEpWFFBpg+xtJS05RQJjRQKeFo2+tMm0NFLNO2+tEUFWhs0U6KUrQFoaKUUoWgCgoSil+lEUC0JRSlaCtAUhIopyrNS7IFFi0iJEPepCsCnquBRcGKVkt2NRcU6KVVwKIoJb2RuKjbmn3CMZ+1RznFMuKHxTSaaTRSsaj8i7qSkoosriiEVIgBOTt9Yn7xmPaabFAFMniS3bO1gAyPIBBUyMzg7gCGxwRPFP1OkuW4+YjpPG5WWfbcBNQD0xHlU6626FZRccKwhl3GGGTDDg8nnzo2KiJFJMDmhvKn2rsRgYJk5kgxg5jEGMdzM4i91bq7X7nzDbt2yECbUXapXaUlgSZaDG7nA7ignd6M0iljFPusCZAABztEwPQbiT+TTaRdiURTlWptHpLlx9tpGd4ZtqiSVUSxj0FIGVaUGlP8aSKYDgc0tNpaohxsWaJp",
-      "title": "wesrty",
-      "date": "asdf",
-      "time": "as",
-      "category": "qwsd",
-      "location": "qatwujk",
-      "description": "hello again",
-      "id": 18
     },
     {
       "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjy-5hizhVQIAT9eF-VkAGXfpkzDyeQDlaSg&usqp=CAU",
@@ -171,16 +141,6 @@
       "id": 22
     },
     {
-      "poster": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUWFRgWFhYYGBgaGhgZGBocHB4aHxwYGhoaGRocGBocIS4lHB4rIRkZJjgnKy8xNTU1HCQ7QDs0Py40NTEBDAwMEA8QHxISHzQrJSs0NjQ0NDY0NDQ0NDQ0NDQ2NjQ0ND00NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQIDBAUGBwj/xAA9EAACAQMDAgQFAQYFBAEFAAABAhEAAyEEEjEFQSJRYXEGE4GRoTJCUrHB0fAUI2KC4RVykvEHFiRTssL/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAKREAAgICAgIBAwUAAwAAAAAAAAECEQMhEjEEQVETcZEUIiNhoQWxwf/aAAwDAQACEQMRAD8A8ip002lqhWOFKKZNOFItSHRUx0jRjMZIHIHMlTn8VADUqXoEQPtP/H4pOw2RUVYvKhEhzMCQVxu7hSDxHmBUFJMLEpWFFBpg+xtJS05RQJjRQKeFo2+tMm0NFLNO2+tEUFWhs0U6KUrQFoaKUUoWgCgoSil+lEUC0JRSlaCtAUhIopyrNS7IFFi0iJEPepCsCnquBRcGKVkt2NRcU6KVVwKIoJb2RuKjbmn3CMZ+1RznFMuKHxTSaaTRSsaj8i7qSkoosriiEVIgBOTt9Yn7xmPaabFAFMniS3bO1gAyPIBBUyMzg7gCGxwRPFP1OkuW4+YjpPG5WWfbcBNQD0xHlU6626FZRccKwhl3GGGTDDg8nnzo2KiJFJMDmhvKn2rsRgYJk5kgxg5jEGMdzM4i91bq7X7nzDbt2yECbUXapXaUlgSZaDG7nA7ignd6M0iljFPusCZAABztEwPQbiT+TTaRdiURTlWptHpLlx9tpGd4ZtqiSVUSxj0FIGVaUGlP8aSKYDgc0tNpaohxsWaJp",
-      "title": "re43q",
-      "date": "43rq",
-      "time": "q34r",
-      "category": "qrf",
-      "location": "qrf",
-      "description": "q3",
-      "id": 23
-    },
-    {
       "poster": "",
       "title": "",
       "date": "",
@@ -188,7 +148,7 @@
       "category": "",
       "location": "",
       "description": "",
-      "id": 24
+      "id": 23
     }
   ]
 }

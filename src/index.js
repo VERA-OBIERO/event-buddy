@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import { Box } from '@chakra-ui/react';
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Box bg="#EDF7F6">
+      <App />
+    </Box>
   </React.StrictMode>
 );
 
