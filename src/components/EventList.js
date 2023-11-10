@@ -44,7 +44,7 @@ const EventList = ({ events, setEvents, onDeleteEvent }) => {
   //render list of events using Chakra UI in Card format
   return (
     <div>
-    <h2>Event List</h2>
+    <h2>Upcoming Events</h2>
     <SimpleGrid columns={3} spacing={4}>
       {events.map((event) => (
         <Box key={event.id} maxW="sm">
