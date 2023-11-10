@@ -13,7 +13,9 @@ const Header = () => {
         </Box>
         <Spacer />
         <Box>
-          {/* Use Link component to navigate to the Add Event page */}
+          <ChakraLink as={Link} to="/" color="white" marginRight="4">
+            Home
+          </ChakraLink>
           <ChakraLink as={Link} to="/add-event" color="white" marginRight="4">
             Add Event
           </ChakraLink>
