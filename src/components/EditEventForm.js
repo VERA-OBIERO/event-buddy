@@ -27,26 +27,22 @@ const EditEventForm = ({ event, onEditEvent, onClose,setEvents }) => {
       },
       body: JSON.stringify(editedEvent),
     })
-    .then((response) => response.json())
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
     .then((data) => {
       // Update the event in the parent component
       onEditEvent(data);
       // Close the edit form
       onClose();
-      // Check if setEvents is a function before calling it
-      if (typeof setEvents === 'function') {
-        setEvents((prevEvents) =>
-          prevEvents.map((e) => (e.id === data.id ? data : e))
-        );
-      } else {
-        console.error('setEvents is not a function');
-      }
     })
-      .catch((error) => {
-        console.error('Error editing event:', error);
-      });
-  };
-
+    .catch((error) => {
+      console.error('Error editing event:', error);
+    });
+};
   return (
     <Box>
       <FormControl>

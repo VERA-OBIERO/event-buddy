@@ -57,7 +57,7 @@ const AddEventForm = ({ onAddEvent }) => {
   
 
   return (
-    <Box p="4" maxW="600px" mx="auto" mt="4" bg="#877696">
+    <Box p="4" maxW="600px" mx="auto" mt="4" bg="primary.100" borderRadius="lg" boxShadow="lg">
       <h2>Add New Event</h2>
       <FormControl>
         <FormLabel>Poster URL</FormLabel>
@@ -87,7 +87,7 @@ const AddEventForm = ({ onAddEvent }) => {
         <FormLabel>Description</FormLabel>
         <Textarea name="description" value={newEvent.description} onChange={handleInputChange} />
       </FormControl>
-      <Button onClick={handleAddEvent} colorScheme="blue" mt="4">
+      <Button onClick={handleAddEvent} colorScheme="teal" mt="4" >
         Add Event
       </Button>
     </Box>

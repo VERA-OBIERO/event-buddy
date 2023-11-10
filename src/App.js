@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import EventList from './components/EventList';
@@ -7,6 +7,25 @@ import AddEventForm from './components/AddEventForm';
 import Search from './components/Search';
 import EditEventForm from './components/EditEventForm';
 import Footer from './components/Footer';
+
+const theme = extendTheme({
+  fonts: {
+    heading: 'Poppins, sans-serif',
+    body: 'Poppins, sans-serif',
+  },
+  colors: {
+    primary: {
+      50: '#e6f7ff',
+      100: '#b3e0ff',
+      // Add more shades as needed
+    },
+    secondary: {
+      50: '#ffe6e6',
+      100: '#ff9999',
+      // Add more shades as needed
+    },
+  },
+});
 
 function App() {
   // state to store the list of events

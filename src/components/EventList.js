@@ -61,7 +61,7 @@ const EventList = ({ events, setEvents, onDeleteEvent }) => {
             <Text>Category: {event.category}</Text>
             <Text>Location: {event.location}</Text>
             <ButtonGroup spacing="2" mt="4">
-              <Button variant="solid" colorScheme="blue" onClick={openRSVPModal}>
+              <Button variant="solid" colorScheme="teal" onClick={openRSVPModal}>
                 RSVP
               </Button>
               <Button variant="solid" colorScheme="blue" onClick={() => openEditForm(event)}>

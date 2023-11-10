@@ -28,8 +28,9 @@ const Search = ({ onSearch }) => {
         placeholder="Search events..."
         value={searchTerm}
         onChange={handleInputChange}
+        bg={'lightblue'}
       />
-      <Button onClick={handleSearch} colorScheme="blue" mt="2">
+      <Button onClick={handleSearch} colorScheme="teal" mt="2">
         Search
       </Button>
     </div>

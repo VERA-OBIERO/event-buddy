@@ -7,7 +7,7 @@ const Header = () => {
     <Box bg="teal" p="4" color="white">
       <Flex>
         <Box>
-          <Heading size="md" fontWeight="bold">
+          <Heading size="2xl" fontWeight="bold">
             Welcome to Event Buddy!
           </Heading>
         </Box>
